@@ -1,0 +1,81 @@
+/*Цвет основного текста*/ #757575
+/*цвет вторичного текста*/ #212121
+/*цвет фона*/ #FFFFFF
+/*акцент*/ #2196F3
+/*bg фон серый*/ #2F303A
+
+:root{
+    --main-text-color:#757575;
+    --second-text-color:#212121;
+    --accent-color:#2196F3;
+}
+
+body{
+    background-color:#F5F5F5;
+    
+}
+
+/*header*/
+
+.head{
+    background-color: #FFFFFF;
+    
+}
+.logo{
+
+        
+}
+
+
+.logo-web{
+    
+    color: #2196F3;
+}
+.logo-studio{
+    color: #000000;
+}
+
+.link {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.link-nav{
+    color:#212121 ;
+
+}
+.link-nav:hover, .link-nav:focus{
+    color: #2196F3;
+}
+
+.contact{
+    color:#757575;
+    text-decoration: none;
+}
+
+.contact:hover, .contact:focus{
+    color: #2196F3;
+}
+
+/*hero*/
+
+.hero{
+    
+    height: 600px;
+    background-color:#212121 ;
+}
+
+.hero-title{
+    color: #FFFFFF;
+    text-align: center;
+    padding-top: 200px;
+    font-size: 44px;
+}
+
+.button-hero{
+    color: #FFFFFF;
+    background-color: #2196F3;
+    width: 216px;
+    height: 50px;
+    border-radius: 4px;
+}
