@@ -1,37 +1,48 @@
-/*Цвет основного текста*/ #757575
-/*цвет вторичного текста*/ #212121
-/*цвет фона*/ #FFFFFF
-/*акцент*/ #2196F3
-/*bg фон серый*/ #2F303A
-
-:root{
-    --main-text-color:#757575;
-    --second-text-color:#212121;
-    --accent-color:#2196F3;
+:root {
+    --main-color: #757575;
+    --second-text-color: #212121;
+    --accent-color: #2196F3;
+    --main-bg:#F5F5F5;
+    --second-bg:#2F303A;
+    --head-foot-bg:#FFFFFF;
 }
 
-body{
-    background-color:#F5F5F5;
-    
+
+/*Цвет основного текста #757575*/
+/*цвет вторичного текста #212121*/
+/*цвет фона #FFFFFF*/
+/*акцент #2196F3*/
+/*bg фон серый #2F303A*/
+
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: var(--main-bg);
+    color: var(--main-color);
+
 }
 
 /*header*/
 
-.head{
-    background-color: #FFFFFF;
-    
-}
-.logo{
+.head {
+    background-color:var(--head-foot-bg);
 
-        
 }
 
-
-.logo-web{
-    
-    color: #2196F3;
+.logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
 }
-.logo-studio{
+
+
+.logo-web {
+    color: var(--accent-color);
+}
+
+.logo-studio {
     color: #000000;
 }
 
@@ -40,42 +51,150 @@ body{
     list-style-type: none;
 }
 
-.link-nav{
-    color:#212121 ;
+.link-nav {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
 
 }
-.link-nav:hover, .link-nav:focus{
-    color: #2196F3;
+
+.link-nav:hover,
+.link-nav:focus {
+    color: var(--accent-color)
 }
 
-.contact{
-    color:#757575;
+.contact {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--main-text-color);
     text-decoration: none;
 }
 
-.contact:hover, .contact:focus{
-    color: #2196F3;
+.contact:hover,
+.contact:focus {
+    color:var(--accent-color);
 }
 
 /*hero*/
 
-.hero{
+.hero {
     
     height: 600px;
-    background-color:#212121 ;
+    background-color: var(--second-bg);
 }
 
-.hero-title{
+.hero-title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
     color: #FFFFFF;
     text-align: center;
-    padding-top: 200px;
-    font-size: 44px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    
 }
 
-.button-hero{
+.button-hero {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.06em;
     color: #FFFFFF;
-    background-color: #2196F3;
+    background-color: var(--accent-color);
     width: 216px;
     height: 50px;
-    border-radius: 4px;
+    border: none;
+}
+
+/*плюси співпраці*/
+
+.pluss-work h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--second-text-color);
+}
+
+.pluss-work p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+.pluss-work ul{
+    list-style-type: none;
+}
+/*приклади робіт*/
+
+.example-work{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+}
+
+.example-work ul{
+    list-style-type: none;
+}
+
+/*наша команда*/
+.our-team ul{
+    list-style-type: none;
+}
+
+.our-team h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+}
+
+.our-team h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+}
+
+/*footer*/
+
+.foot{
+    background-color: var(--second-bg);
+
+}
+
+.foot .logo-studio{
+    color: #FFFFFF;
+}
+
+.foot-contact{
+    list-style-type: none;
 }
