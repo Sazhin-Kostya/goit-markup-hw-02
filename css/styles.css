@@ -3,8 +3,9 @@
     --second-text-color: #212121;
     --accent-color: #2196F3;
     --main-bg:#F5F5F5;
-    --second-bg:#2F303A;
-    --head-foot-bg:#FFFFFF;
+    --second-bg: #2F303A;
+    --third-bg: #F5F4FA;
+    --hero-foot-bg:#FFFFFF;
 }
 
 
@@ -25,13 +26,12 @@ body {
 /*header*/
 
 .head {
-    background-color:var(--head-foot-bg);
+    background-color:#FFFFFF;
 
 }
 
 .logo {
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
@@ -112,10 +112,10 @@ body {
     line-height: 30px;
     letter-spacing: 0.06em;
     color: #FFFFFF;
-    background-color: var(--accent-color);
-    width: 216px;
-    height: 50px;
-    border: none;
+    background-color:var(--accent-color);
+    width:216px;
+    height:50px;
+    border:none;
 }
 
 /*плюси співпраці*/
@@ -155,18 +155,31 @@ body {
     color: var(--second-text-color);
 }
 
+.example-work h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+}
+
 .example-work ul{
     list-style-type: none;
 }
 
 /*наша команда*/
+.our-team{
+    background-color: var(--third-bg);
+}
 .our-team ul{
     list-style-type: none;
 }
 
 .our-team h2{
     font-family: 'Roboto';
-    font-style: normal;
+    font-style:normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -190,6 +203,15 @@ body {
     background-color: var(--second-bg);
 
 }
+.address-location{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--hero-foot-bg);
+}
 
 .foot .logo-studio{
     color: #FFFFFF;
@@ -197,4 +219,47 @@ body {
 
 .foot-contact{
     list-style-type: none;
+}
+
+/*Портфоліо*/
+.portfolio{
+    background-color: var(--main-bg);
+    
+}
+
+.portfolio ul{
+    list-style-type: none;
+}
+.portfolio-btn{
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border: 0;
+    background-color: var(--third-bg;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus
+{
+    background-color: var(--accent-color);
+    color:#FFFFFF;
+}
+
+.example h2{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: var(--second-text-color);
+}
+
+.example p{
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
 }
