@@ -26,7 +26,7 @@ body {
 /*header*/
 
 .head {
-    background-color:#FFFFFF;
+    background-color:var(--main-bg);
 
 }
 
@@ -65,6 +65,9 @@ body {
 .link-nav:focus {
     color: var(--accent-color)
 }
+.link .link-nav.current{
+    color: var(--accent-color);
+}
 
 .contact {
     font-weight: 500;
@@ -91,7 +94,7 @@ body {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    color: #FFFFFF;
+    color: var(--main-bg);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;   
@@ -102,11 +105,12 @@ body {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--main-bg);
     background-color:var(--accent-color);
     width:216px;
     height:50px;
     border:none;
+    cursor: pointer;
 }
 
 /*плюси співпраці*/
@@ -185,9 +189,13 @@ body {
     letter-spacing: 0.03em;
     color: var(--hero-foot-bg);
 }
+.address-location:hover,
+.address-location:focus {
+    color: var(--accent-color);
+}
 
 .foot .logo-studio{
-    color: #FFFFFF;
+    color: var(--main-bg);
 }
 
 .foot-contact{
@@ -224,13 +232,14 @@ body {
     letter-spacing: 0.03em;
     border: 0;
     background-color: var(--third-bg);
+    cursor: pointer;
 }
 
 .portfolio-btn:hover,
 .portfolio-btn:focus
 {
     background-color: var(--accent-color);
-    color:#FFFFFF;
+    color:var(--main-bg);
 }
 
 .portfolio-href{
