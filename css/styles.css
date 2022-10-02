@@ -6,6 +6,7 @@
     --second-bg: #2F303A;
     --third-bg: #F5F4FA;
     --hero-foot-bg:#FFFFFF;
+    --foot-text-color:rgba(255, 255, 255, 0.6);
 }
 
 
@@ -14,7 +15,7 @@
 /*цвет фона #FFFFFF*/
 /*акцент #2196F3*/
 /*bg фон серый #2F303A*/
-
+/*цвет текста контаков футер color: rgba(255, 255, 255, 0.6);*/
 
 body {
     font-family: Roboto, sans-serif;
@@ -74,7 +75,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--main-text-color);
+    color: var(--main-color);
     text-decoration: none;
 }
 
@@ -101,14 +102,13 @@ body {
 }
 
 .button-hero {
+    font-family: Roboto, sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
     color: var(--main-bg);
     background-color:var(--accent-color);
-    width:216px;
-    height:50px;
     border:none;
     cursor: pointer;
 }
@@ -181,7 +181,6 @@ body {
 
 .foot{
     background-color: var(--second-bg);
-
 }
 .address-location{
     font-size: 14px;
@@ -201,6 +200,19 @@ body {
 .foot-contact{
     list-style-type: none;
     font-style: normal;
+}
+
+.contacts-foot{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--foot-text-color);
+    text-decoration: none;
+}
+
+.contacts-foot:hover,
+.contacts-foot:focus {
+    color: var(--accent-color);
 }
 
 /*Портфоліо*/
@@ -225,6 +237,7 @@ body {
     list-style-type: none;
 }
 .portfolio-btn{
+    font-family: Roboto, sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
